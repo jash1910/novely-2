@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5001/api/auth"
+  baseURL: "https://novely-2.onrender.com/api/auth"
 });
 
 export const signup = (data) => API.post("/signup", data);
