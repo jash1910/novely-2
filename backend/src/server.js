@@ -13,7 +13,7 @@ const app = express();
 // --- MIDDLEWARE FIRST ---
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://novely-2.vercel.app"],
+    origin: ["http://localhost:5173", "https://novely-2.vercel.app", "https://novely-2-1r3o-ieetgyu5u-jash1910s-projects.vercel.app"],
     credentials: true,
   })
 );
