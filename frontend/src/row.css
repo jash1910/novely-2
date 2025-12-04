@@ -1,0 +1,50 @@
+.row-container {
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  
+  .row-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .row-scroll {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  
+  .row-scroll::-webkit-scrollbar {
+    height: 7px;
+  }
+  
+  .row-scroll::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+  }
+  
+  .row-card {
+    min-width: 150px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .row-card img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .row-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .row-card p {
+    color: #ccc;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  

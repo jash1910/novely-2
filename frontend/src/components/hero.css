@@ -1,0 +1,73 @@
+.hero-pastel.centered-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    padding: 5.5rem 6vw 6rem;
+    border-radius: 2rem;
+    background: radial-gradient(circle at 20% 15%, #ffe4ef 0%, #f7f3ff 45%, #f0fbff 100%);
+    box-shadow: 0 20px 60px rgba(180, 145, 255, 0.12);
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #222;
+    margin: 0;
+  }
+  
+  .hero-title span {
+    color: #ff7bb5;
+  }
+  
+  .hero-sub {
+    font-size: 1.05rem;
+    max-width: 550px;
+    color: #4b455c;
+    margin-bottom: 1.6rem;
+  }
+  
+  .hero-pill {
+    padding: 0.4rem 1rem;
+    background: #fff;
+    border: 1px solid rgba(255, 182, 213, 0.4);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .hero-search {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 540px;
+    padding: 0.6rem;
+    border-radius: 999px;
+  
+    background: #fff;
+    box-shadow: 0 14px 40px rgba(124, 95, 255, 0.12);
+  }
+  
+  .hero-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+  }
+  
+  .primary-btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff7bb5, #ffb36b);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  

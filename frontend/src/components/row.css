@@ -1,0 +1,55 @@
+.row-container {
+    margin-bottom: 30px;
+  }
+  
+  .row-container h2 {
+    margin-left: 10px;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .row-scroll {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding: 10px;
+  }
+  
+  .row-scroll::-webkit-scrollbar {
+    height: 7px;
+  }
+  
+  .row-scroll::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+  }
+  
+  .row-card {
+    min-width: 150px;
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  
+  .row-card img {
+    width: 150px;
+    height: 220px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .row-card:hover {
+    transform: scale(1.18);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  }
+  
+  .row-card p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #ddd;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

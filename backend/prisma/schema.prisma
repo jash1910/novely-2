@@ -14,4 +14,42 @@ model User {
   password  String
   lastLogin DateTime?
   createdAt DateTime @default(now())
+  comments  Comment[]
+  readList  ReadBook[]
+}
+
+model Book {
+  id            String     @id @default(cuid())
+  googleBooksId String     @unique
+  title         String
+  author        String
+  description   String?
+  coverImage    String?
+  publishedYear Int?
+  genre         String?
+  comments      Comment[]
+  readBy        ReadBook[]
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  text      String
+  rating    Int?
+  userId    String
+  bookId    String
+  user      User     @relation(fields: [userId], references: [id])
+  book      Book     @relation(fields: [bookId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ReadBook {
+  id        String   @id @default(cuid())
+  userId    String
+  bookId    String
+  user      User     @relation(fields: [userId], references: [id])
+  book      Book     @relation(fields: [bookId], references: [id])
+  createdAt DateTime @default(now())
 }
