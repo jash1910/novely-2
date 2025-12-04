@@ -23,7 +23,7 @@ It demonstrates modern full-stack development practices with **JWT-based authent
 | ------------ | ---------------- | ---------------------------------------------------------------------------------- |
 | **Frontend** | Vercel           | [https://frontend-chi-nine-66.vercel.app](https://frontend-chi-nine-66.vercel.app) |
 | **Backend**  | Render           | *(To be added after backend deployment)*                                           |
-| **Database** | MongoDB Atlas    | Connected                                                                          |
+| **Database** | Prostgrace   | Connected                                                                          |
 
 ---
 
