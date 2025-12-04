@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CommentsSection from "../components/CommentsSection";
 import { saveBook, deleteBook, markAsRead } from "../api/books";
-import "./bookReader.css";
+import "./BookReader.css";
 
 export default function BookReader() {
   const { id } = useParams();
