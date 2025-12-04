@@ -9,16 +9,10 @@ import auth from "../middleware/middleware.js";
 
 const router = express.Router();
 
-// CREATE
-router.post("/:bookId", createComment);
+router.post("/:bookId", auth, createComment);
+router.get("/:bookId", auth, getCommentsForBook);
+router.patch("/:id", auth, updateComment);
+router.delete("/:id", auth, deleteComment);
 
-// READ (with pagination + sort + filter + search)
-router.get("/:bookId", getCommentsForBook);
-
-// UPDATE
-router.patch("/:id", updateComment);
-
-// DELETE
-router.delete("/:id", deleteComment);
 
 export default router;

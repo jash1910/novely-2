@@ -10,7 +10,7 @@ export const createComment = async (req, res) => {
   
       if (!text) return res.status(400).json({ message: "Text is required" });
   
-      const userId = "dummy"; // remove later after auth enabled
+      const userId = req.user.id;
   
       const book = await prisma.book.upsert({
         where: { googleBooksId: bookId },
